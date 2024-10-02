@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jstest</title>
+    <style>
+            @font-face {
+                font-family: "custom";
+                src: url("/fonts/i-fogror.ttf") format("truetype");
+            }
+
+            h1 {
+                font-family: "custom", Tahoma;
+                color: #6C91C2;
+                margin-bottom: 0px;
+            }
+
+            h2 {
+                font-family: "custom", Tahoma;
+                color: #6C91C2;
+            }
+
+            h3 {
+                font-family: "custom", Tahoma;
+                color: #6C91C2;
+            }
+
+            p {
+                font-family: "custom", Tahoma;
+                color: #49DCB1;
+            }
+
+            a {
+                font-family: "custom", Tahoma;
+                color: #DB2955;
+                font-size: larger;
+            }
+
+            div {
+                font-family: "custom", Tahoma;
+                color: #49DCB1;
+                font-size: larger;
+            }
+
+            body {
+                background-color: #000011;
+            }
+
+            input {
+                font-family: "custom", Tahoma;
+            }
+
+            input {
+                color: #000011;
+                background-color: #DB2955;
+                border-radius: 2px;
+                width: 150px;
+                height: 50px;
+                font-size: 25px;
+            }
+
+            .bigNumber {
+                font-size: 50px;
+                margin-top: 0px;
+            }
+
+            .priceTag {
+                margin-top: 0px;
+                font-size: 30px;
+            }
+
+            .bigText {
+                margin-bottom: -30px;
+                font-size: 30px;
+            }
+    </style>
+    <a href="home.html">Home</a>
+    <!-- <a href="ninetaxa.html">Ninetaxa</a> -->
+    <a href="jstest.html">Clicker Game</a>
+    <p>warning: this game does not save your progress because i have no idea what i'm doing lol</p>
+</head>
+<body>
+    <p class="bigText" id="clickPower">Click Power: 1</p>
+    <h1 id="output" class="bigNumber">0 (how sad)</h1>
+    <input type = "button" onclick = "handleClick()" value = "click" />
+    <h1>upgrades</h1>
+    <input type = "button" onclick = "upgrade1Bought()" value = "upgrade 1"/>
+    <p id = "upgrade1Price" class = "priceTag">Cost: 5</p>
+    <script src="test.js"></script>
+</body>
+</html>
